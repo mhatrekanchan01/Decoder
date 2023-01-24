@@ -43,6 +43,15 @@ describe ("substitution", () => {
         expect(actual).to.equal(expected);
     
     });
+    it("Is the Substitution Cypher encoding working as described in the passing requirements in the previous lesson?", () => {
+        const input = "message";
+        const alphabet = "plmoknijbuhvygctfxrdzeswaq"
+        const encode = true;
+        const expected = "ykrrpik";
+        const actual = substitution(input, alphabet, encode);
+        expect(actual).to.equal(expected);
+    
+    });
 
 
 });

@@ -39,5 +39,13 @@ describe ("polybius", () => {
         expect(actual).to.equal(expected);
     
     });
+    it("Is the Polybius Square encoding working as described in the passing requirements in the previous lesson?", () => {
+    const input = "message";
+    const encode = true;
+    const expected = '23513434112251';
+    const actual = polybius(input, encode);
+    expect(actual).to.equal(expected);
+
+});
 
 });

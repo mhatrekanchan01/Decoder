@@ -55,4 +55,13 @@ it("Maintains spaces and other nonalphabetic symbols in the message", () => {
     expect(actual).to.equal(expected);
 
 });
+    it("Is the Caesar Shift encoding working as described in the passing requirements in the previous lesson?", () => {
+    const input = "Zebra Magazine";
+    const shift = 3;
+    const encode = true;
+    const expected = 'cheud pdjdclqh';
+    const actual = caesar(input, shift, encode);
+    expect(actual).to.equal(expected);
+
+});
 });

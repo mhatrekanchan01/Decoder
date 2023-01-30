@@ -51,17 +51,14 @@ for (let k = 97; k <= 122; k++){
 			}
 		}
 		return polyArray.join("");
-	}
+	}	  
 	  
-	  
-	  
-	  if (!encode || encode === false){
+  if (!encode || encode === false){
 		  if ((input.length - (input.split(" ").length - 1)) %2 !== 0){
-  return false;
-}
+        return false;
+      }
 		 
 	  	for (let i = 0; i <= input.length; i = i+2){
-			
 		 if (input[i] === " "){
        i--;
        decodeArray.push(" ");

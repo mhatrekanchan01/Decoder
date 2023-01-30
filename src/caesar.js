@@ -28,9 +28,7 @@ const caesarModule = (function () {
       }
       if ((lowCaseElement === 32) || ((lowCaseElement < 97) || (lowCaseElement > 122))){
       shiftValue = lowCaseElement;
-      }     
-      
-      
+      }          
       arrayCode.push(String.fromCharCode(shiftValue));
     }
     return arrayCode.join("");
